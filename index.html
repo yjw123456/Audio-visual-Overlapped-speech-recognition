@@ -1,1 +1,388 @@
-whose your dady
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Audio Samples</title>
+  <style>
+body {
+  margin:0;
+  padding:10px 30px;
+  background: #fff;
+  color: #111;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+audio {
+  width: 250px;
+  margin-right: 10px;
+}
+.sample {
+  font-size: 0.9em;
+  font-style: italic;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+</style>
+</head>
+<body>
+    <h2>Audio samples: End-to-end dysarthric speech reconstruction via TTS knowledge distillation. </h2>
+  <ul>
+    <li>Speaker-dependent dysarthric speech reconstruction system is trained for each dysarthric speaker.</li>
+    <li>UASpeech corpus is used for experiments. Four dysarthric speakers from 4 groups with different speech intelligibility are used for experiments: F05(high), M05(mid), M07(low), F03(very low). 'F' and 'M' denote female and male respectively.</li>
+  </ul>
+
+    <h3>Dysarthric speech reconstruction for different speakers</h3>
+
+      <!-- MF -->
+    <h4>F05 (intelligibility-high):</h4>
+    <table border="1">
+    <tr>
+      <td>No.</td>
+      <td>Original Utterance</td>
+      <td>Reconstructed Utterance</td>
+      <td>Text</td>
+    </tr>
+    <!-- MF 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>1</td>
+      <td>
+        <audio controls>
+        <source src="0-F05_B2_UW21_M5-ADVANTAGEOUS.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="0-F05-rec-ADVANTAGEOUS.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>advantageous</td>
+    </tr>
+    <!-- FF 5 sample 4 pieces of audios  -->
+    <tr>
+      <td>2</td>
+      <td>
+        <audio controls>
+        <source src="3-F05_B2_UW45_M6-BELEAGUERING.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="3-F05-rec-BELEAGUERING.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>beleaguering</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>
+        <audio controls>
+        <source src="4-F05_B2_UW35_M3-ATROCIOUS.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="4-F05-rec-ATROCIOUS.wav" type="audio/wav">
+        </audio>
+      </td>  
+      <td>atrocious</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>
+        <audio controls>
+        <source src="9-F05_B2_UW72_M8-CONVULSION.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="9-F05-rec-CONVULSION.wav"  type="audio/wav">
+        </audio>
+      </td>  
+      <td>convulsion</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>
+        <audio controls>
+        <source src="14-F05_B2_UW41_M3-BATTLEFIELD.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="14-F05-rec-BATTLEFIELD.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>battlefield</td>
+    </tr>
+    </table>
+
+  <!-- FF -->
+  <h4>M05 (intelligibility-mid):</h4>
+    <table border="1">
+    <tr>
+      <td>No.</td>
+      <td>Original Utterance</td>
+      <td>Reconstructed Utterance</td>
+      <td>Text</td>
+    </tr>
+    <!-- FF 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>1</td>
+      <td>
+        <audio controls>
+        <source src="0-M05_B2_UW21_M8-ADVANTAGEOUS.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="0-M05-rec-ADVANTAGEOUS.wav" type="audio/wav">
+        </audio>
+      </td>     
+      <td>advantageous</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>
+        <audio controls>
+        <source src="2-M05_B2_UW16_M6-ABLUTIONS.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="2-M05-rec-ABLUTIONS.wav" type="audio/wav">
+        </audio>
+      </td>    
+      <td>ablutions</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>
+        <audio controls>
+        <source src="5-M05_B2_LW_M8-WHISKEY.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="5-M05-rec-WHISKEY.wav" type="audio/wav">
+        </audio>
+      </td>    
+      <td>whiskey</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>
+        <audio controls>
+        <source src="6-M05_B2_UW26_M4-ALTHOUGH.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="6-M05-rec-ALTHOUGH.wav" type="audio/wav">
+        </audio>
+      </td>     
+      <td>although</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>
+        <audio controls>
+        <source src="19-M05_B2_UW33_M3-APPROACH.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="19-M05-rec-APPROACH.wav" type="audio/wav">
+        </audio>
+      </td>     
+      <td>approach</td>
+    </tr>
+    </table>
+
+    <!-- FM -->
+    <h4>M07 (intelligibility-low):</h4>
+    <table border="1">
+    <tr>
+      <td>No.</td>
+      <td>Original Utterance</td>
+      <td>Reconstructed Utterance</td>
+      <td>Text</td>
+    </tr>
+    <!-- FM 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>1</td>
+      <td>
+        <audio controls>
+        <source src="0-M07_B2_UW27_M2-ANXIETIES.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="0-M07-rec-ANXIETIES.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>anxieties</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>
+        <audio controls>
+        <source src="1-M07_B2_CW74_M7-NUMBER.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="1-M07-rec-NUMBER.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>number</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>
+        <audio controls>
+        <source src="7-M07_B2_LU_M7-UNIFORM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="7-M07-rec-UNIFORM.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>uniform</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>
+        <audio controls>
+        <source src="8-M07_B2_UW23_M5-ALLURE.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="8-M07-rec-ALLURE.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>allure</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>
+        <audio controls>
+        <source src="10-M07_B2_LF_M6-FOXTROT.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="10-M07-rec-FOXTROT.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>foxtrot</td>
+    </tr>
+    </table>
+
+    <!-- MM -->
+    <h4>F03 (intelligibility-very low):</h4>
+    <table border="1">
+    <tr>
+      <td>No.</td>
+      <td>Original Utterance</td>
+      <td>Reconstructed Utterance</td>
+      <td>Text</td>
+    </tr>
+    <!-- MM 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>1</td>
+      <td>
+        <audio controls>
+        <source src="0-F03_B2_UW30_M3-APOTHECARY.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="0-F03-rec-APOTHECARY.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>apothecary</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>
+        <audio controls>
+        <source src="1-F03_B2_UW13_M6-UNUSUAL.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="1-F03-rec-UNUSUAL.wav" type="audio/wav">
+        </audio>
+      </td>  
+      <td>unusual</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>
+        <audio controls>
+        <source src="2-F03_B2_UW68_M5-CELEBRITY.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="2-F03-rec-CELEBRITY.wav" type="audio/wav">
+        </audio>
+      </td>    
+      <td>celebrity</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>
+        <audio controls>
+        <source src="15-F03_B2_C8_M8-CONTROL.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="15-F03-rec-CONTROL.wav" type="audio/wav">
+        </audio>
+      </td>    
+      <td>control</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>
+        <audio controls>
+        <source src="19-F03_B2_C17_M4-DOWNWARD.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="19-F03-rec-DOWNWARD.wav" type="audio/wav">
+        </audio>
+      </td>   
+      <td>downward</td>
+    </tr>
+    </table>
+       
+
+</body>
+</html>
