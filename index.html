@@ -62,12 +62,7 @@ audio {
     <li> For audio-visual separation, the frequency-domain model [3] we presented here used 321-dimentional spectrogram (hop-size/window=10ms/hann) as audio feature and lip embedding extracted by the LipNet from the mouth region-of-interest (ROI) as visual feature. The model directly generated the separated TF-mask of the target speaker. </li>
   </ul>
   
-<!--     <table>
-    <tr>
-      <td><a><img src="VM-revise.png"  alt="viusal modality driven gate" height="200" width="200"/></a></td>
-      <td><a><img src="VM-revise.png"  alt="viusal modality driven gate" height="200" width="200"/></a></td>
-    </tr>
-    </table> -->
+
 
       <!-- MF -->
     <h4>Seperated audio samples of -5dB mixture:</h4>
@@ -438,18 +433,33 @@ audio {
    
   
    <h3> Si-SNR evaluation results of the separation system</h3>
-   <ul>
-    <li> "Mix" denotes phase extracted from the overlapped speech. </li>    
-    <li> "Oracle" denoted phase extracted from ground truth target speech.</li>
-    <li> Though phase information have significant impact on Si-SNR evaluation, it is not important to speech recogntion using acoustic feature like MFCC and Filterbank.</li>
-   </ul>
+   <p style="text-align:center"><img src="./image/Si-SNR-NP.png"  alt="viusal modality driven gate" height="150"/></p>
    
-   <p style="text-align:center"><img src="./tables/Si-SNR_Freq.png"  alt="viusal modality driven gate" height="150"/></p>
+   
+   
+    <h3>Integrated system architecture</h3>
+    <table>
+    <tr>
+      <td><a><img src="image/FF-revise.png"  alt="viusal modality driven gate" height="200" width="200"/></a></td>
+      <td><a><img src="image/VM-revise.png"  alt="viusal modality driven gate" height="200" width="200"/></a></td>
+      <td><a><img src="image/AVM-revise.png"  alt="viusal modality driven gate" height="200" width="200"/></a></td>
+    </tr>
+    </table>
+   
+   
+   <h3> Word Error Rate (WER) of Pipelined and Integrated Systems</h3>
+   <ul>
+    <li>"Multi" denotes multi-condition data with separated speech and clean speech </li>    
+    <li>"Multi*" denotes multi-condition data with overlapped and clean speech.</li>
+    <li>"concat" denotes feature concatenation</li>
+    <li> "A&otimesV" denotes audio driven modality fusion gate; "AV&otimesV" denotes audio-visual driven modality fusion gate;</li>
+   </ul>
+   <p style="text-align:center"><img src="./image/WER-Results.png"  alt="viusal modality driven gate" height="150"/></p>
    
    <h2>Reference</h2>
    <p> [1] Noda K, Yamaguchi Y, Nakadai K, et al. Audio-visual speech recognition using deep learning[J]. Applied Intelligence, 2015, 42(4): 722-737.</p>
-   <p> [2] Jian Wu,  Yong Xu,  Shi-Xiong Zhang,  Lian-Wu Chen,  MengYu, Lei Xie, and Dong Yu,  “Time domain audio visual speechseparation,”arXiv preprint arXiv:1904.03760, 2019.</p>
-   <p> [3] Kolbak M, Yu D, Tan Z H, et al. Multitalker speech separation with utterance-level permutation invariant training of deep recurrent neural networks[J]. IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP), 2017, 25(10): 1901-1913.</p>
+   <p> [2] Kolbak M, Yu D, Tan Z H, et al. Multitalker speech separation with utterance-level permutation invariant training of deep recurrent neural networks[J]. IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP), 2017, 25(10): 1901-1913.</p>
+   <p> [3] Jian Wu,  Yong Xu,  Shi-Xiong Zhang,  Lian-Wu Chen,  MengYu, Lei Xie, and Dong Yu,  “Time domain audio visual speechseparation,”arXiv preprint arXiv:1904.03760, 2019.</p>
     
        
 </div>
